@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mujeeb ur Rehman Jamali - Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-photo-cv {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2c3e50;
+            flex-shrink: 0;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .education-item, .experience-item, .publication-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .education-item::before, .experience-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .degree, .position {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .institution, .organization {
+            font-style: italic;
+            color: #34495e;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 11px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+        
+        .skill-list {
+            font-size: 11px;
+            color: #34495e;
+        }
+        
+        .publication-item {
+            margin-bottom: 12px;
+            font-size: 11px;
+        }
+        
+        .pub-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .pub-journal {
+            font-style: italic;
+            color: #34495e;
+        }
+        
+        .pub-year {
+            color: #7f8c8d;
+        }
+        
+        .doi {
+            color: #3498db;
+            font-size: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .profile-photo-cv {
+                width: 100px;
+                height: 100px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 15mm;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/profile.png" alt="Dr. Mujeeb ur Rehman Jamali" class="profile-photo-cv" onerror="this.style.display='none'">
+        <div class="header-content">
+            <div class="name">Dr. Mujeeb ur Rehman Jamali</div>
+            <div class="title">Researcher & Data Scientist</div>
+            <div class="contact-info">
+                Email: mujeeb.jamali@gcuh.edu.pk | Phone: +92 336 1365002<br>
+                ORCID: 0009-0003-8746-8692 | Government College University Hyderabad
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>Accomplished researcher and data scientist with extensive expertise in machine learning, cloud computing, cybersecurity, and big data systems. Proven track record in academic research with multiple publications in peer-reviewed journals. Experienced in both theoretical research and practical implementation of advanced computing technologies.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-item">
+            <div class="degree">Ph.D in Computer Science</div>
+            <div class="institution">Institute of Mathematics and Computer Science, University of Sindh Jamshoro, Pakistan</div>
+            <div class="date">2015 - 2022</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div class="experience-item">
+            <div class="position">Lecturer</div>
+            <div class="organization">Government College University Hyderabad</div>
+            <div class="date">Current Position</div>
+            <ul style="margin-top: 5px; font-size: 11px;">
+                <li>Conducting advanced research in machine learning and data science</li>
+                <li>Teaching graduate and undergraduate courses in computer science</li>
+                <li>Supervising student research projects and thesis work</li>
+                <li>Publishing research in peer-reviewed international journals</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="position">Assistant Professor</div>
+            <div class="organization">Emaan Institute of Management and Sciences, Karachi</div>
+            <div class="date">January 2024 - Previous</div>
+            <ul style="margin-top: 5px; font-size: 11px;">
+                <li>Developed and delivered curriculum for computer science programs</li>
+                <li>Established research collaborations and supervised student projects</li>
+                <li>Participated in academic committees and institutional initiatives</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="position">Senior Data Processing Officer</div>
+            <div class="organization">University of Sindh, Jamshoro, Pakistan</div>
+            <div class="date">October 2009 - March 2023</div>
+            <ul style="margin-top: 5px; font-size: 11px;">
+                <li>Managed large-scale data processing operations and systems</li>
+                <li>Implemented data management frameworks for institutional research</li>
+                <li>Ensured data quality, integrity, and security protocols</li>
+                <li>Developed analytical reporting systems for administrative use</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Research Interests & Expertise</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Cloud Computing Security</h4>
+                <div class="skill-list">Data Security Architecture, Cloud-based Big Data Systems, Secure Cloud Applications</div>
+            </div>
+            <div class="skill-category">
+                <h4>Cryptography & Security</h4>
+                <div class="skill-list">Asymmetric & Symmetric Algorithms, Blockchain Technology, Authentication Systems</div>
+            </div>
+            <div class="skill-category">
+                <h4>Database Systems</h4>
+                <div class="skill-list">Non-Relational Document Databases, Data Integrity Algorithms, NoSQL Performance</div>
+            </div>
+            <div class="skill-category">
+                <h4>Big Data & Analytics</h4>
+                <div class="skill-list">Big Data Processing, Natural Language Processing, RSS Feed Filtering</div>
+            </div>
+            <div class="skill-category">
+                <h4>IoT & Embedded Systems</h4>
+                <div class="skill-list">Wireless Sensor Technologies, Arduino-based Systems, Home Automation</div>
+            </div>
+            <div class="skill-category">
+                <h4>E-Commerce Security</h4>
+                <div class="skill-list">Electronic Commerce Applications, User Authentication, Location-based Services</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Journal Publications</div>
+
+        <div class="publication-item">
+            <div class="pub-title">Architectural Design for Data Security in Cloud-based Big Data Systems</div>
+            <div class="pub-journal">Baghdad Science Journal, Vol. 23, No. 9, pp. 1-16</div>
+            <div class="pub-year">2024</div>
+            <div class="doi">DOI: 10.21123/bsj.2024.8722</div>
+            <div class="doi">URL: https://bsj.uobaghdad.edu.iq/home/vol21/iss9/5/</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">RSS Feeds Filtering from multiple sources using automated techniques of Natural Language Processing</div>
+            <div class="pub-journal">Asian Bulletin of Big Data Management, Vol. 4, No. 1, pp. 1-14</div>
+            <div class="pub-year">2024</div>
+            <div class="doi">DOI: 10.62019/abbdm.v4i1.118</div>
+            <div class="doi">URL: https://abbdm.com/index.php/Journal/article/view/118</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">The Quality Analysis of Food and Vegetable from Image Processing</div>
+            <div class="pub-journal">VAWKUM Transactions on Computer Sciences, Vol. 11, No. 2, pp. 01-17</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">DOI: 10.21015/vtcs.v11i2.1664</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">An Empirical Evaluation of Data Integrity Algorithm Performance in Non-Relational Document Databases</div>
+            <div class="pub-journal">VAWKUM Transactions on Computer Sciences, Vol. 11, No. 2, pp. 70-82</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">DOI: 10.21015/vtcs.v11i2.1663</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">User-Centric Context-Aware Location-Based Service for ATM's Users</div>
+            <div class="pub-journal">VAWKUM Transactions on Computer Sciences, Vol. 11, No. 2, pp. 60-69</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">DOI: 10.21015/vtcs.v11i2.1627</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Blockchain Technology Performance of Asymmetric Algorithms: An Empirical Study</div>
+            <div class="pub-journal">VFAST Transactions on Software Engineering, Vol. 11, No. 3, pp. 10-24</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">URL: https://vfast.org/journals/index.php/VTSE/article/view/1580</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">An Empirical Study of Performance of Block Cipher Algorithms in Cloud Computing Environment</div>
+            <div class="pub-journal">VFAST Transactions on Software Engineering, Vol. 11, No. 2, pp. 160-171</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">URL: https://vfast.org/journals/index.php/VTSE/article/view/1502</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Secure Architecture for Electronic Commerce Applications Running over the Cloud</div>
+            <div class="pub-journal">VFAST Transactions on Software Engineering, Vol. 11, No. 1, pp. 51-60</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">URL: https://vfast.org/journals/index.php/VTSE/article/view/1391</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">The Design, Use and Impact of Cloud Computing During the Covid-19 Crises</div>
+            <div class="pub-journal">VFAST Transactions on Software Engineering, Vol. 10, No. 4, pp. 181-189</div>
+            <div class="pub-year">2022</div>
+            <div class="doi">DOI: 10.21015/vtse.v10i4.1234</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Data Integrity Issues and Challenges in Next Generation Non-Relational Document-Oriented Database Outsourced in Public Cloud</div>
+            <div class="pub-journal">International Journal of Emerging Trends in Engineering Research, Vol. 9, No. 4, pp. 416-420</div>
+            <div class="pub-year">2021</div>
+            <div class="doi">DOI: 10.30534/ijeter/2021/05942021</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Implementation of Wireless Sensor Technologies using Virtual Wire Library for Controlling Alternative Current Appliances</div>
+            <div class="pub-journal">International Journal of Advanced Trends in Computer Science and Engineering, Vol. 10, No. 1</div>
+            <div class="pub-year">2021</div>
+            <div class="doi">DOI: 10.30534/ijatcse/2021/021012021</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Speech Recognition System (Home Appliances Controller of Local & Remote System) using LPC & HMMs Methodologies</div>
+            <div class="pub-journal">International Journal of Advanced Trends in Computer Science and Engineering, Vol. 10, No. 1</div>
+            <div class="pub-year">2021</div>
+            <div class="doi">DOI: 10.30534/ijatcse/2021/021022021</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">A Comparative Analysis of Semantic Web Databases Based on Scalability and Performance</div>
+            <div class="pub-journal">International Journal of Advanced Trends in Computer Science and Engineering, Vol. 10, No. 1</div>
+            <div class="pub-year">2021</div>
+            <div class="doi">DOI: 10.30534/ijatcse/2021/021032021</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Security Issues in Data at Rest in a Non-Relational Document Database</div>
+            <div class="pub-journal">Sindh University Research Journal (Science Series), Vol. 52, No. 3, pp. 279-283</div>
+            <div class="pub-year">2020</div>
+            <div class="doi">DOI: 10.26692/surj/2020.03.279</div>
+        </div>
+
+        <div class="publication-item">
+            <div class="pub-title">Controlling of Home Appliances using Arduino UNO Board with Infrared (IR) and Radio Frequency (RF) Technologies</div>
+            <div class="pub-journal">International Journal of Advanced Trends in Computer Science and Engineering, Vol. 9, No. 6</div>
+            <div class="pub-year">2020</div>
+            <div class="doi">DOI: 10.30534/ijatcse/2020/021062020</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Conference Publications</div>
+
+        <div class="publication-item">
+            <div class="pub-title">Users Authentication Issues and Challenges in Electronic Commerce Applications</div>
+            <div class="pub-journal">International Conference on Green Energy, Computing and Intelligent Technology (GEn-CITy 2023)</div>
+            <div class="pub-year">2023</div>
+            <div class="doi">DOI: 10.1109/GEn-CITy58094.2023.10159652</div>
+            <div class="doi">URL: https://ieeexplore.ieee.org/document/10159652</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Research Summary</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Publication Summary</h4>
+                <div class="skill-list">Journal Articles: 15 | Conference Papers: 1 | Total: 16</div>
+            </div>
+            <div class="skill-category">
+                <h4>Research Areas</h4>
+                <div class="skill-list">Cloud Security, Cryptography, Big Data, Non-Relational Databases</div>
+            </div>
+            <div class="skill-category">
+                <h4>Active Years</h4>
+                <div class="skill-list">2020-2024 | Consistent Research Output</div>
+            </div>
+            <div class="skill-category">
+                <h4>Research Focus</h4>
+                <div class="skill-list">Data Security, Database Systems, IoT Applications</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Research Profiles</div>
+        <p style="font-size: 11px;">
+            <strong>ORCID:</strong> https://orcid.org/0009-0003-8746-8692<br>
+            <strong>Google Scholar:</strong> https://scholar.google.com/citations?user=5APZ-gEAAAAJ<br>
+            <strong>ResearchGate:</strong> https://www.researchgate.net/profile/Mujeeb-Ur-Rehman-Jamali<br>
+            <strong>Academia.edu:</strong> https://independent.academia.edu/MujeebJamali1
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <p style="font-size: 11px;">
+            <strong>Programming Languages:</strong> Python, Java, JavaScript, SQL<br>
+            <strong>Technologies:</strong> Machine Learning Frameworks, Cloud Platforms, Database Systems<br>
+            <strong>Research Tools:</strong> Statistical Analysis, Data Visualization, Academic Writing<br>
+            <strong>Specializations:</strong> Big Data Analytics, Cybersecurity, Mobile Development
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Image Assets Directory
+
+This directory should contain:
+
+1. **profile.png** - ✅ Professional headshot of Dr. Mujeeb ur Rehman Jamali (ADDED!)
+   - Recommended size: 400x400px or larger (square aspect ratio)
+   - High quality, professional lighting
+   - Formal or business casual attire
+
+2. **favicon.ico** - Website favicon
+   - 16x16, 32x32, and 48x48 pixel versions
+   - Should represent the professional brand
+
+## Image Guidelines:
+
+### Profile Photo:
+- Use a high-resolution image (at least 800x800px)
+- Professional appearance with good lighting
+- Neutral or academic background
+- Square crop for best results in circular frame
+
+### Optimization:
+- Compress images for web use
+- Use appropriate formats (JPEG for photos, PNG for graphics)
+- Consider WebP format for better compression
+
+## Placeholder Image:
+Until the actual profile photo is provided, the website will show a placeholder.
+You can replace the src attribute in index.html with the actual image path once uploaded.
+
+Current image references in HTML:
+
+**Main Portfolio (index.html):**
+```html
+<img src="assets/images/profile.png" alt="Dr. Mujeeb ur Rehman Jamali" class="profile-photo">
+```
+
+**CV Page (assets/resume/Dr_Mujeeb_ur_Rehman_Jamali_CV.html):**
+```html
+<img src="../images/profile.png" alt="Dr. Mujeeb ur Rehman Jamali" class="profile-photo-cv">
+```
+
+## ✅ UPDATED: Profile photo integration complete!
+Both the main portfolio and CV now include your professional photo in the header sections.
